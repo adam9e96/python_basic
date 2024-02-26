@@ -22,3 +22,5 @@ scores.pop()  # 마지막 요소를 제거
 print(scores)  # [90, 50, 40, 30]
 scores.pop(0)
 print(scores)  # [50, 40, 30]
+
+
