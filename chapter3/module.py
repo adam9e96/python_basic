@@ -154,3 +154,87 @@ my_list = [1,2,3,4,5]
 random.shuffle(my_list)
 print(my_list)  # 출력 : [1, 4, 2, 5, 3]
 
+# 3. time 모듈
+import time
+
+# 1) time() 함수
+# 1970년 1월 1일 0시 0분 0초 부터 현재까지 경과된 시간 timestamp을 반환
+# 소수점 이하는 마이크로 초를 의미
+print(time.time())  # 1645240996.2733545
+
+# 2) ctime() 함수
+# 인수로 전달된 시간 timestamp을 형식에 갖춰 반환
+print(time.ctime(time.time()))  # Sat Feb 19 12:23:16 2022
+
+# 3) strftime() 함수
+# 인수로 전달된 날자와 지시자를 이용하여 형식을 갖춘 날짜 데이터가 문자열로 반환
+# 년 : %y : 2자리 날짜로 표시
+# 년 : %Y : 4자리 날짜로 표시
+# 월 : %m : 2자리 숫자로 표시 (01 ~ 12)
+# 월 : %b : 3자리 영문으로 표시 (Jan ~ Dec)
+# 월 : %B : 전체 영문으로 표시 (January ~ December)
+# 일 : %d : 2자리 숫자로 표시 (01 ~ 31)
+# 요일 : %a : 3자리 영문으로 표시 (Sun ~ Sat)
+# 요일 : %A : 전체 영문으로 표시 (Sunday ~ Saturdy)
+# 시 : %l : 12시간제로 표시 (01 ~ 12)
+# 시 : %H : 24시간제로 표시 (00 ~ 23)
+# 분 : %M : 2시간제로 표시 (00 ~ 59)
+# 초 : %S : 2시간제로 표시 (00 ~ 59)
+# 오전 / 오후 : %p : AM 또는 PM
+print(time.strftime('%Y-%m-%d %H:%M:%S'))
+
+# 4) sleep() 함수 # 이거 크롤링 할 때 중요함
+# 인수로 전달된 초 second 만큼 시스템을 일시 정지
+time.sleep(1)
+
+# 4. datetime 모듈
+# 날짜와 시간 데이터를 처리할 때 사용
+print()
+import datetime
+
+# 1) now() 메소드
+# datetime 클래스 내부에 정의된 메소드
+# 시스템의 현재 날짜와 시간을 반환
+present = datetime.datetime.now()
+print(present)
+
+# 2) date() 함수
+# 특정날짜를 반환
+birthday = datetime.date(2014, 8, 25)
+print(birthday)  # 2014-08-25
+
+# 3) time() 함수
+# 특정시간을 반환
+wake = datetime.time(10, 48, 0)
+print(wake)  # 10:48:00
+
+# 4) 날짜 / 시간 관련 필드값
+# 특정 날짜에 원하는 데이터만 추출하고자 할때 이용
+today = datetime.datetime.now()
+print(today.year)  # 년도
+print(today.month)  # 월
+print(today.day)  # 일
+print(today.hour)  # 시
+print(today.minute)  # 분
+print(today.second)  # 초
+
+# 5) timedelta() 함수
+# 날짜 / 시간 데이터의 연산을 위하여 사용
+# 1주 : timedelta(weeks=1)
+# 1일 : timedelta(days=1)
+# 1시간 : timedelta(hours=1)
+# 1분 : timedelta(minutes=1)
+# 1초 : timedelta(seconds=1)
+
+today = datetime.datetime.now()
+yesterday = today - datetime.timedelta(days=1)  # 어제 구함
+tomorrow = today + datetime.timedelta(days=1)  # 내일 구함
+print(yesterday)
+print(tomorrow)
+
+# 6) total_seconds() 메소드
+# 어떤 기간에 포함된 총 시간의 초 seconds 로 반환
+date1 = datetime.date(2020, 8, 25)
+date2 = datetime.date(2020, 8, 26)
+print(date2 - date1)  # 1 day, 0:00:00
+print((date2 - date1).total_seconds())  # 86400.0 = 60초 * 60분 * 24시간
