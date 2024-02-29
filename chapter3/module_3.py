@@ -81,9 +81,9 @@ for i in range(6):
 
 print(f'이번 당첨번호는 {number} 입니다.')
 
-# 2번.
-randomNumber = random.randint(1, 100)
-print(randomNumber)  # 출력 : 39
+# # 2번.
+# randomNumber = random.randint(1, 100)
+# print(randomNumber)  # 출력 : 39
 
 ### 1번 답
 pot = list(range(1, 46))  # 1에서 45 사이의 모든 정수를 순서대로 pot 리스트에 저장
