@@ -1,6 +1,5 @@
 # function_01에서 넘어옴
 
-
 # 2. 모듈 생성
 # converter.py 생성
 
@@ -28,21 +27,19 @@ print()
 from converter import kilometer_to_miles  # 모듈은 가져오지 않고 특정 함수만 가져옴
 
 miles = kilometer_to_miles(150)  # 모듈명을 명시하지 않고 사용
-print(f'150km={miles}')  # 출력 : 150km=93.20565
+print(f'150km={miles}miles')  # 출력 : 150km=93.20565miles
 
 print()
 from converter import *  # 모듈은 가져오지 않고 모듈의 모든 함수 가져옴
 
 miles = kilometer_to_miles(150)  # 모듈명을 명시하지 않고 사용
-print(f'150km={miles}')
+print(f'150km={miles}miles')  # 출력 : 150km=93.20565miles
 
 pounds = gram_to_pounds(1000)  # 모듈명을 명시하지 않고 사용
-print(f'1000g={pounds}pounds')
+print(f'1000g={pounds}pounds')  # 출력 : 1000g=2.20462pounds
 
 # 4. 별명 사용하기
-# 모듈이나 함수를 import 하는 경우에 원래 이름 대신 별명 alias 를 지정하고 사용
-# 모듈이나 함수의 이름이 긴 경우에 주로 짧은 별명을 지정하고 긴 본래 이름 대신 사용
-# 별명을 지정할 때는 as 키워드를 사용
+
 print()
 
 import converter as cvt  # converter 모듈에 cvt 라는 별명을 지정
@@ -106,7 +103,7 @@ print(random.randint(1, 10))  # 6  1 이상 10 이하의 정수
 # randrange() 함수는 그 특정 범위에 속한 정수중 하나만 임의로 생성
 print()
 print(random.randrange(10))  # 0이상 10 미만의 정수 # 출력 : 3 or 0 등 10미만
-print(random.randrange(1, 10))  # 0이상 10 미만의 정수 # 출력 : 8
+print(random.randrange(1, 10))  # 1이상 10 미만의 정수 # 출력 : 8
 print(random.randrange(1, 10, 2))  # 0이상 10 미만의 홀수 # 출력 : 5
 
 # 3) random() 함수
@@ -185,6 +182,7 @@ print(time.strftime('%Y-%m-%d %H:%M:%S'))
 # 인수로 전달된 초 second 만큼 시스템을 일시 정지
 time.sleep(1)
 
+print('datetime')
 # 4. datetime 모듈
 # 날짜와 시간 데이터를 처리할 때 사용
 print()
@@ -194,7 +192,7 @@ import datetime
 # datetime 클래스 내부에 정의된 메소드
 # 시스템의 현재 날짜와 시간을 반환
 present = datetime.datetime.now()
-print(present)
+print(present)  # 2024-03-02 01:10:54.765721
 
 # 2) date() 함수
 # 특정날짜를 반환
@@ -209,12 +207,12 @@ print(wake)  # 10:48:00
 # 4) 날짜 / 시간 관련 필드값
 # 특정 날짜에 원하는 데이터만 추출하고자 할때 이용
 today = datetime.datetime.now()
-print(today.year)  # 년도
-print(today.month)  # 월
-print(today.day)  # 일
-print(today.hour)  # 시
-print(today.minute)  # 분
-print(today.second)  # 초
+print(today.year)  # 년도 # 2024
+print(today.month)  # 월  # 3
+print(today.day)  # 일   # 2
+print(today.hour)  # 시  # 1
+print(today.minute)  # 분    # 10
+print(today.second)  # 초    # 54
 
 # 5) timedelta() 함수
 # 날짜 / 시간 데이터의 연산을 위하여 사용
@@ -227,8 +225,10 @@ print(today.second)  # 초
 today = datetime.datetime.now()
 yesterday = today - datetime.timedelta(days=1)  # 어제 구함
 tomorrow = today + datetime.timedelta(days=1)  # 내일 구함
-print(yesterday)
-print(tomorrow)
+print(yesterday)    # 2024-03-01 01:10:54.765721
+
+print(tomorrow) # 2024-03-03 01:10:54.765721
+
 
 # 6) total_seconds() 메소드
 # 어떤 기간에 포함된 총 시간의 초 seconds 로 반환

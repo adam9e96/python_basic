@@ -17,6 +17,7 @@
 import numpy as np  # 외부 모듈이라 빨간줄뜸 # 마우스 갖다 대서 설치하는 것은 안하는게 좋음.
 
 print(np.sum([1, 2, 3, 4, 5, ]))  # 15
+print(np.sum((1, 2, 3, 4, 5)))  # 15
 
 # 4. 패키지 삭제
 # pip uninstall package

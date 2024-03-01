@@ -52,39 +52,6 @@ import math
 import random
 import time
 
-#  1번
-
-pot = list((range(1, 46)))
-# print(pot)
-# pot.append(random.sample(range(1, 46), 6))
-# print(random.sample(range(1, 46), 6))  # [36, 4, 14, 35, 12, 16] e,g) 로또
-# print(pot)
-
-jackpot = list(pot)
-for i in range(0, 6):
-    random.shuffle(pot)
-    # print(pot) # test
-# print(pot)
-
-pot.pop()
-# jackpot = pot.pop()
-print(jackpot)
-time.sleep(2)
-jackpot.sort()
-print(jackpot)
-
-number = list()
-for i in range(6):
-    number.append(random.choice(jackpot))
-    # print(random.choice(seasons))  # 출력 : fall
-    print(f'{i + 1}번째 당첨번호는 {number[i]}입니다.')
-
-print(f'이번 당첨번호는 {number} 입니다.')
-
-# # 2번.
-# randomNumber = random.randint(1, 100)
-# print(randomNumber)  # 출력 : 39
-
 ### 1번 답
 pot = list(range(1, 46))  # 1에서 45 사이의 모든 정수를 순서대로 pot 리스트에 저장
 jackpot = list()

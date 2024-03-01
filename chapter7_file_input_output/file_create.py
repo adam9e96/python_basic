@@ -1,5 +1,5 @@
 # 3. 파일의 생성
-file = open('./output/my_file.txt', 'wt')  # 빈 파일 생성
+file = open('./output/my_file.txt','wt') # 빈 파일 생성
 print('my_file.txt 파일이 생성되었습니다.')
 file.close()
 
