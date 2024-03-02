@@ -19,15 +19,13 @@ person1 = Person('김홍도')
 person1.eat('바나나')  # 출력 : 김홍도가  바나나를 먹습니다.
 
 potter = Student('해리포터', '호그와트')
-potter.eat('감자')  # 출력 : 해리포터가 감자를 먹습니다.
+potter.eat('감자')  # 출력 : 해리포터가 감자를 먹습니다.    # 부모 클래스의 메소드 실행
 
-potter.study()  # 출력 : 해리포터는 호그와트에서 공부를 합니다.
+potter.study()  # 출력 : 해리포터는 호그와트에서 공부를 합니다.    # 자식 클래스의 메소드 실행
 
 
 # 파이썬은 다중 상속도 가능하다.
 
-
-###
 class Computer:  # 슈퍼 클래스
     def __init__(self):
         print('슈퍼 클래스의 생성자가 실행되었습니다.')
@@ -69,7 +67,6 @@ class Espresso(Coffee):  # 서브 클래스
         super().coffee_info()  # 슈퍼 클래스의 메서드 실행
         print(f'물: {self.water}ml')
 
-
 class Americano(Espresso):
     def __init__(self, bean: str, water: str, more_water: str):
         super().__init__(bean, water)
@@ -98,5 +95,6 @@ print()
 
 Espresso.espresso_info(coffee)  # 인스턴스 메서드이지만 클래스 이름으로 호출 가능. 대신 객체를 매개 변수 self 로 전달해야함
 # 객체를 매개변수 SELF 를 이용해 전달도 가능하다.
+
 
 # 문제
