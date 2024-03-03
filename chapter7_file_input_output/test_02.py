@@ -7,7 +7,7 @@ import time
 file = open(f'./output/{time.strftime("%Y-%m-%d")}.txt', 'at')
 
 while True:
-    schdule =input('오늘의 스케줄을 입력하세요 >>> ')
+    schdule = input('오늘의 스케줄을 입력하세요 >>> ')
     if not schdule:
         break
     file.write(schdule + '\n')
@@ -16,7 +16,6 @@ file.close()
 
 # 파이썬 업데이트 솟ㄱ
 
-file = open('./output/한글파일.txt','w',encoding='utf-8')
+file = open('./output/한글파일.txt', 'w', encoding='utf-8')
 file.write("오늘 나는 학교에 갔습니다.1")
 file.close()
-
