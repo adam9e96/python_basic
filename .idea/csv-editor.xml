@@ -31,6 +31,20 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\chapter7_file_input_output\input\CSV\학생명단.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\chapter7_file_input_output\input\CSV\회원명단.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\chapter7_file_input_output\input\아파트(매매)_실거래가_20240304160735.csv">
           <value>
             <Attribute>
@@ -109,6 +123,13 @@
           </value>
         </entry>
         <entry key="\chapter7_file_input_output\output\래미안.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\chapter7_file_input_output\output\차량관리_03.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
