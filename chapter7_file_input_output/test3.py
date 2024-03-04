@@ -38,7 +38,7 @@ print(data_list_new)
 
 
 # 2. 변경된 내용을 저장
-# 원본 손상을 막기 위해 복사보 ㄴ생성.
+# 원본 손상을 막기 위해 복사본 생성.
 # 파이참에서 확인하기 쉽게 utf-8로 인코딩 설정
 with open('./output/연락처_복사본.txt','wt',encoding='utf-8') as file:
     for row in data_list_new:

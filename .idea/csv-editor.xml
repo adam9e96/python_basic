@@ -24,6 +24,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\chapter7_file_input_output\input\CSV\example_with_header.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\chapter7_file_input_output\input\CSV\pop_seoul.csv">
           <value>
             <Attribute>
@@ -102,6 +109,20 @@
           </value>
         </entry>
         <entry key="\chapter7_file_input_output\output\daegu_raemian.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\chapter7_file_input_output\output\output.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\chapter7_file_input_output\output\output_with_header2.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

@@ -12,27 +12,28 @@ import csv
 # 서울특별시 마포구에 설치된 CCTV는 총 2167 대입니다.
 
 # DictReader 이용할 것
-with open('./input/CSV/cctv.csv') as file:
-    datas = csv.DictReader(file)
+# with open('./input/CSV/cctv.csv') as file:
+#     datas = csv.DictReader(file)
+#
+#     # print(cctv_file_reader)
+#     total_cctv = 0
+#     for data in datas:
+#         # print(data['카메라대수'])
+#         total_cctv += int(data['카메라대수'])
+#
+# print(f'서울특별시 마포구에 설치된 CCTV는 총 {format(total_cctv, ",")} 대입니다.')
 
-    # print(cctv_file_reader)
-    total_cctv = 0
-    for data in datas:
-        # print(data['카메라대수'])
-        total_cctv += int(data['카메라대수'])
-
-print(f'서울특별시 마포구에 설치된 CCTV는 총 {format(total_cctv, ",")} 대입니다.')
 
 # 문제 2번
-with open('./input/CSV/pop_seoul.csv') as file:
-    datas2 = csv.DictReader(file)
-    # print(datas2)
-    # for data in datas2:
-    #     print(data)
-    # print(data["Foreigner"])
-    # korean = int(data["Korean"])
-    # foreigner = int(data["Foreigner"])
-    # print(korean)
+# with open('./input/CSV/pop_seoul.csv') as file:
+#     datas2 = csv.DictReader(file)
+#     print(datas2)
+#     for data in datas2:
+#         print(data)
+#     print(data["Foreigner"])
+#     korean = int(data["Korean"])
+#     foreigner = int(data["Foreigner"])
+#     print(korean)
 
 # 1. pop_seoul.csv 파일을 읽어서 딕셔너리로 출력
 example_file = open('./input/CSV/pop_seoul.csv')
@@ -99,7 +100,7 @@ with open('./input/CSV/pop_seoul.csv') as csvfile:
             new_datas.append(new_data)
 
 
-print(new_datas)
+# print(new_datas)
 
 with open('./output/pop_seoul.csv','w',newline='') as csvfile:
     writer = csv.DictWriter(csvfile,fieldnames=['Gu','Korean','Foreigner','Rate'])
