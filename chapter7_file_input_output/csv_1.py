@@ -59,7 +59,6 @@
 #         print(line)
 
 
-
 # 1 . reader 객체
 # csv 모듈은 별도의 설치없이 사용가능.
 # import csv
@@ -144,19 +143,3 @@
 # for row in example_dict_reader:
 #     print(f'{row["time"]}, {row["name"]},{row["amount"] } ')
 # print('=' * 20)
-
-import csv
-# DictWriter 객체는 csv 파일을 생성하기 위해 딕셔너리를 사용.
-output_file = open('./output/output_with_header2.csv','w',newline='')
-output_dict_writer = csv.DictWriter(output_file,['Name','Pet','Phone'])
-# 파일에 헤더 행을 넣고 싶으면 writeheader() 를 호출
-
-output_dict_writer.writeheader()
-
-# writerow() 메서드를 호출하여 각 행을 쓸 수 있는데, 이 떄 딕셔너리를 사용.
-# 딕셔너리의 키는 헤더이고, 딕셔너리의 값은 파일에 쓰려는 데이터가 들어감.
-output_dict_writer.writerow({'Name':'Alice','Pet':'cat','Phone':'555-1234'})
-output_dict_writer.writerow({'Name':'Bob','Phone':'555-9999'})  # 누락된 키는 빈 상태로 나옴.
-output_dict_writer.writerow({'Phone':'555-5555','Name':'Carol','Pet':'dog'})    # 순서는 중요하지 않음
-output_dict_writer.writerow({'Phone':'555-5555','Name':'Carol','Pet':'dog'})    # 순서는 중요하지 않음
-output_file.close()
