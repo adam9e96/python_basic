@@ -12,7 +12,7 @@ api_key: str = '1f992565eacbc94fe7db0946f3f4898f'
 
 city: str = 'Taegu'
 url: str = f'http://api.openweathermap.org/geo/1.0/direct?q={city}&limit=5&appid={api_key}'
-# print(url)
+print(url)
 json_data = request.urlopen(url).read()
 dict_data = json.loads(json_data)
 lat = dict_data[0]['lat']  # 위도
