@@ -1,0 +1,57 @@
+{
+  "response": {
+    "body": {
+      "totalCount": 6,
+      "items": [
+        {
+          "sggName": "양산시",
+          "umdName": "신기동",
+          "tmX": "386497.697813",
+          "tmY": "207649.610778",
+          "sidoName": "경상남도"
+        },
+        {
+          "sggName": "문경시",
+          "umdName": "신기동",
+          "tmX": "301885.416232",
+          "tmY": "349326.169541",
+          "sidoName": "경상북도"
+        },
+        {
+          "sggName": "영천시",
+          "umdName": "신기동",
+          "tmX": "376021.076886",
+          "tmY": "279872.072358",
+          "sidoName": "경상북도"
+        },
+        {
+          "sggName": "동구",
+          "umdName": "신기동",
+          "tmX": "353809.41643",
+          "tmY": "264224.124279",
+          "sidoName": "대구광역시"
+        },
+        {
+          "sggName": "여수시",
+          "umdName": "신기동",
+          "tmX": "261592.923224",
+          "tmY": "140450.514392",
+          "sidoName": "전라남도"
+        },
+        {
+          "sggName": "공주시",
+          "umdName": "신기동",
+          "tmX": "213221.12463",
+          "tmY": "325302.999553",
+          "sidoName": "충청남도"
+        }
+      ],
+      "pageNo": 1,
+      "numOfRows": 10
+    },
+    "header": {
+      "resultMsg": "NORMAL_CODE",
+      "resultCode": "00"
+    }
+  }
+}

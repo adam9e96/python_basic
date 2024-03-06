@@ -87,6 +87,20 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\chapter7_file_input_output\output\12345.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\chapter7_file_input_output\output\IAD_01.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\chapter7_file_input_output\output\apt_2403_조건2.csv">
           <value>
             <Attribute>
@@ -157,6 +171,20 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\chapter7_file_input_output\output\json_06.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\chapter7_file_input_output\output\json_06_01.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\chapter7_file_input_output\output\output.csv">
           <value>
             <Attribute>
@@ -193,6 +221,27 @@
           </value>
         </entry>
         <entry key="\chapter7_file_input_output\output\차량관리_03.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\chapter7_file_input_output\xml\124.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\chapter7_file_input_output\xml\daeguperahouse_240306.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\chapter7_file_input_output\xml\result.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

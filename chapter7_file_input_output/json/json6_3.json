@@ -1,0 +1,30 @@
+{
+  "response": {
+    "body": {
+      "totalCount": 3,
+      "items": [
+        {
+          "tm": 0.8,
+          "addr": "대구 동구 서호동 25-1(안심로49길 70) 반야월초등학교 옥상",
+          "stationName": "서호동"
+        },
+        {
+          "tm": 3,
+          "addr": "대구광역시 수성구 노변공원로 52 노변초등학교 (시지동)",
+          "stationName": "시지동"
+        },
+        {
+          "tm": 3.1,
+          "addr": "대구광역시 수성구 달구벌대로 지하2950 (연호동) 달구벌대로변",
+          "stationName": "연호동"
+        }
+      ],
+      "pageNo": 1,
+      "numOfRows": 10
+    },
+    "header": {
+      "resultMsg": "NORMAL_CODE",
+      "resultCode": "00"
+    }
+  }
+}
