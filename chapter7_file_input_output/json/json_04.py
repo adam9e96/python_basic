@@ -27,26 +27,26 @@ url: str = 'https://www.daegufood.go.kr/kor/api/tasty.html?mode=json&addr=%EC%A4
 
 json_data = request.urlopen(url).read()
 dict_data = json.loads(json_data)
-json_data = json.dumps(dict_data, indent=4, sort_keys=True)
-# print(f'1233 {json_data}')
-
+json_data = json.dumps(dict_data, indent=4)
+# print(f'{dict_data}')
+# print(f' {json_data}')
 # print(type(dict_data))  #<class 'dict'>
-result = set()
 
-# print(json_data)
-food_list = dict_data["data"]
-for item in food_list:
-    dict_data: dict
-    # print(item["FD_CS"])
-    result.add(item["FD_CS"])
-
-print(result)
+#
+# result = set()
+# food_list = dict_data["data"]
+# for item in food_list:
+#     dict_data: dict
+#     print(item["FD_CS"])
+#     result.add(item["FD_CS"])
+# print(result)
 
 ## 정답1.
 food_category: set = set()
-for data in dict_data['data']:
-    food_category.add(data["FD_CS"])
-print(food_category)
+for item in dict_data['data']:
+    # print(item["FD_CS"])
+    food_category.add(item["FD_CS"])
+# print(food_category)
 
 """
 # 2. 일식의 음식점명, 연락처, 메뉴 출력
@@ -59,40 +59,40 @@ print(food_category)
 # 연락처: 053-425-3392
 # 메뉴: 회덮밥 9,000원 <br />미주구리 30,000원 <br />점심특선 6,000원<br />"""
 
-for item in food_list:
-    dict_data: dict
-    # print(item["FD_CS"])
-    if item["FD_CS"] == '일식':
-        print(f'음식점명: {item["BZ_NM"]}')
-        print(f'연락처: {item["TLNO"]}')
-        print(f'메뉴: {item["MNU"]}')
-        print("-" * 20)
+# for item in food_category:
+#     dict_data: dict
+#     # print(item["FD_CS"])
+#     if item["FD_CS"] == '일식':
+#         print(f'음식점명: {item["BZ_NM"]}')
+#         print(f'연락처: {item["TLNO"]}')
+#         print(f'메뉴: {item["MNU"]}')
+#         print("-" * 20)
 
 # 3. CSV 파일로 저장
 # 파일명 : daegu_food_jonggu_list.csv
 # 인코딩 : utf-8
 # 헤더 : '음식카테고리', '음식점명', '연락처','메뉴'
-import csv
-
-food_list: list[dict] = list()
-name_list: list[str] = ['음식카테고리', '음식점명', '연락처', '메뉴']
-
-for data in dict_data["data"]:
-    if data["FD_CS"] == '일식':
-        new_data: dict = dict()
-        new_data[name_list[0]] = data["FD_CS"]
-        new_data[name_list[1]] = data["BZ_NM"]
-        new_data[name_list[2]] = data["TLNO"]
-        new_data[name_list[3]] = data["MNU"]
-        # print(new_data)
-        food_list.append(new_data)
-# print(food_list)
-with open('../output/daegu_food_jonggu_list.csv', 'w', newline='', encoding='utf-8') as file:
-    dict_wirter = csv.DictWriter(file,name_list)
-    dict_wirter.writeheader()
-    for data in food_list:
-        data: dict
-        dict_wirter.writerow(data)
+# import csv
+#
+# food_list: list[dict] = list()
+# name_list: list[str] = ['음식카테고리', '음식점명', '연락처', '메뉴']
+#
+# for data in dict_data["data"]:
+#     if data["FD_CS"] == '일식':
+#         new_data: dict = dict()
+#         new_data[name_list[0]] = data["FD_CS"]
+#         new_data[name_list[1]] = data["BZ_NM"]
+#         new_data[name_list[2]] = data["TLNO"]
+#         new_data[name_list[3]] = data["MNU"]
+#         # print(new_data)
+#         food_list.append(new_data)
+# # print(food_list)
+# with open('../output/daegu_food_jonggu_list.csv', 'w', newline='', encoding='utf-8') as file:
+#     dict_wirter = csv.DictWriter(file,name_list)
+#     dict_wirter.writeheader()
+#     for data in food_list:
+#         data: dict
+#         dict_wirter.writerow(data)
 print(f' daegu_food_jonggu_list.csv 파일이 생성 되었습니다.')
 
 """

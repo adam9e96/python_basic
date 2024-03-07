@@ -1,0 +1,259 @@
+<response>
+    <header>
+        <resultCode>00</resultCode>
+        <resultMsg>NORMAL SERVICE.</resultMsg>
+    </header>
+    <body>
+        <items>
+            <item>
+                <adultfare>42000</adultfare>
+                <area>6</area>
+                <busclass>우등</busclass>
+                <busnumber>안동</busnumber>
+                <cpname>경기,대원고속(02-3436-6366), 경기고속(02-455-2114)</cpname>
+                <routeinfo>인천공항2터미널, 인천공항1터미널, 점촌, 예천, 경북도청(신), 안동</routeinfo>
+                <t1endfirst>1050</t1endfirst>
+                <t1endlast>1640</t1endlast>
+                <t1ridelo>1F : 10B</t1ridelo>
+                <t1wdayt>1050, 1640</t1wdayt>
+                <t1wt>1050, 1640</t1wt>
+                <t2endfirst>1030</t2endfirst>
+                <t2endlast>1620</t2endlast>
+                <t2ridelo>B1F : 2</t2ridelo>
+                <t2wdayt>1030, 1620</t2wdayt>
+                <t2wt>1030, 1620</t2wt>
+                <toawfirst>1030</toawfirst>
+                <toawlast>1620</toawlast>
+            </item>
+            <item>
+                <adultfare>42000</adultfare>
+                <area>6</area>
+                <busclass>우등</busclass>
+                <busnumber>안동(영주경유)</busnumber>
+                <cpname>경기,대원고속(02-3436-6366), 대원고속(02-455-2114)</cpname>
+                <routeinfo>인천공항2터미널, 인천공항1터미널, 영주, 안동</routeinfo>
+                <t1endfirst>1240</t1endfirst>
+                <t1endlast>1810</t1endlast>
+                <t1wdayt>1240, 1810</t1wdayt>
+                <t1wt>1240, 1810</t1wt>
+                <t2endfirst>1220</t2endfirst>
+                <t2endlast>1750</t2endlast>
+                <t2ridelo>B1F : 2</t2ridelo>
+                <t2wdayt>1220, 1750</t2wdayt>
+                <t2wt>1220, 1750</t2wt>
+                <toawfirst>1220</toawfirst>
+                <toawlast>1750</toawlast>
+            </item>
+            <item>
+                <adultfare>49500</adultfare>
+                <area>6</area>
+                <busclass>우등</busclass>
+                <busnumber>창원</busnumber>
+                <cpname>천일여객(051-559-1100), 경북고속(053-356-1387), 경남고속뉴부산관광(051-583-7441)</cpname>
+                <routeinfo>인천공항2터미널, 인천공항1터미널, 마산, 창원</routeinfo>
+                <t1endfirst>0720</t1endfirst>
+                <t1endlast>2320</t1endlast>
+                <t1ridelo>1F : 11A</t1ridelo>
+                <t1wdayt>0720, 1000, 1120, 1330, 1640, 1830, 2040, 2320</t1wdayt>
+                <t1wt>0720, 1000, 1120, 1330, 1640, 1830, 2040, 2320</t1wt>
+                <t2endfirst>0700</t2endfirst>
+                <t2endlast>2300</t2endlast>
+                <t2ridelo>B1F : 4</t2ridelo>
+                <t2wdayt>0700, 0940, 1100, 1310, 1620, 1810, 2020, 2300</t2wdayt>
+                <t2wt>0700, 0940, 1100, 1310, 1620, 1810, 2020, 2300</t2wt>
+                <toawfirst>0700</toawfirst>
+                <toawlast>2300</toawlast>
+            </item>
+            <item>
+                <adultfare>50300</adultfare>
+                <area>6</area>
+                <busclass>우등</busclass>
+                <busnumber>포항</busnumber>
+                <cpname>경북고속(054-553-9090), 경북고속(053-356-1387), 아성고속(053-753-7003), 천마고속(053-753-7003)</cpname>
+                <routeinfo>인천공항2터미널, 인천공항1터미널, 경주시외, 포항</routeinfo>
+                <t1endfirst>0920</t1endfirst>
+                <t1endlast>1920</t1endlast>
+                <t1wdayt>0920, 1920</t1wdayt>
+                <t1wt>0920, 1920</t1wt>
+                <t2endfirst>0900</t2endfirst>
+                <t2endlast>1900</t2endlast>
+                <t2ridelo>B1F : 2</t2ridelo>
+                <t2wdayt>0900, 1900</t2wdayt>
+                <t2wt>0900, 1900</t2wt>
+                <toawfirst>0900</toawfirst>
+                <toawlast>1900</toawlast>
+            </item>
+            <item>
+                <adultfare>49100</adultfare>
+                <area>6</area>
+                <busclass>우등</busclass>
+                <busnumber>울산</busnumber>
+                <cpname>경남고속뉴부산관광(051-583-7441), 경북고속(053-356-1387), 아성고속(053-753-7003), 천마고속(053-753-7003)</cpname>
+                <routeinfo>인천공항2터미널, 인천공항1터미널, 울산</routeinfo>
+                <t1endfirst>0740</t1endfirst>
+                <t1endlast>2040</t1endlast>
+                <t1ridelo>1F : 11A</t1ridelo>
+                <t1wdayt>0740, 1010, 1250, 1510, 1740, 2040</t1wdayt>
+                <t1wt>0740, 1010, 1250, 1510, 1740, 2040</t1wt>
+                <t2endfirst>0720</t2endfirst>
+                <t2endlast>2020</t2endlast>
+                <t2ridelo>B1F : 2</t2ridelo>
+                <t2wdayt>0720, 0950, 1230, 1450, 1720, 2020</t2wdayt>
+                <t2wt>0720, 0950, 1230, 1450, 1720, 2020</t2wt>
+                <toawfirst>0720</toawfirst>
+                <toawlast>2020</toawlast>
+            </item>
+            <item>
+                <adultfare>55100</adultfare>
+                <area>6</area>
+                <busclass>우등</busclass>
+                <busnumber>거제(고현)</busnumber>
+                <cpname>경원여객(055-745-0123), 대성티앤이(043-283-3557)</cpname>
+                <routeinfo>인천공항2터미널, 인천공항1터미널, 개양(진주), 통영터미널, 거제(고현)</routeinfo>
+                <t1endfirst>0850</t1endfirst>
+                <t1endlast>1850</t1endlast>
+                <t1ridelo>1F : 11A</t1ridelo>
+                <t1wdayt>0850, 1050, 1350, 1610, 1850</t1wdayt>
+                <t1wt>0850, 1050, 1350, 1610, 1850</t1wt>
+                <t2endfirst>0830</t2endfirst>
+                <t2endlast>1830</t2endlast>
+                <t2ridelo>B1F : 4</t2ridelo>
+                <t2wdayt>0830, 1030, 1330, 1550, 1830</t2wdayt>
+                <t2wt>0830, 1030, 1330, 1550, 1830</t2wt>
+                <toawfirst>0830</toawfirst>
+                <toawlast>1830</toawlast>
+            </item>
+            <item>
+                <adultfare>41500</adultfare>
+                <area>6</area>
+                <busclass>우등</busclass>
+                <busnumber>동대구(직통)</busnumber>
+                <cpname>대성티앤이(043-283-3557), 경북고속(053-356-1387)</cpname>
+                <routeinfo>인천공항2터미널, 인천공항1터미널, 대구동부</routeinfo>
+                <t1endfirst>0650</t1endfirst>
+                <t1endlast>2320</t1endlast>
+                <t1ridelo>1F : 10B</t1ridelo>
+                <t1wdayt>0650, 0720, 0800, 0820, 0850, 0920, 0950, 1040, 1110, 1200, 1250, 1320, 1400, 1440, 1520, 1600,
+                    1650, 1720, 1750, 1820, 1850, 1920, 2000, 2050, 2120, 2200, 2240, 2320
+                </t1wdayt>
+                <t1wt>0650, 0720, 0800, 0820, 0850, 0920, 0950, 1040, 1110, 1200, 1250, 1320, 1400, 1440, 1520, 1600,
+                    1650, 1720, 1750, 1820, 1850, 1920, 2000, 2050, 2120, 2200, 2240, 2320
+                </t1wt>
+                <t2endfirst>0630</t2endfirst>
+                <t2endlast>2300</t2endlast>
+                <t2ridelo>B1F : 3</t2ridelo>
+                <t2wdayt>0630, 0700, 0740, 0800, 0830, 0900, 0930, 1020, 1050, 1140, 1230, 1300, 1340, 1420, 1500, 1540,
+                    1630, 1700, 1730, 1800, 1830, 1900, 1940, 2030, 2100, 2140, 2220, 2300
+                </t2wdayt>
+                <t2wt>0630, 0700, 0740, 0800, 0830, 0900, 0930, 1020, 1050, 1140, 1230, 1300, 1340, 1420, 1500, 1540,
+                    1630, 1700, 1730, 1800, 1830, 1900, 1940, 2030, 2100, 2140, 2220, 2300
+                </t2wt>
+                <toawfirst>0630</toawfirst>
+                <toawlast>2300</toawlast>
+            </item>
+            <item>
+                <adultfare>41500</adultfare>
+                <area>6</area>
+                <busclass>우등</busclass>
+                <busnumber>대구북부(상주경유)</busnumber>
+                <cpname>진안고속(053-3547-3314)</cpname>
+                <routeinfo>인천공항2터미널, 인천공항1터미널, 상주, 구미, 대구북부</routeinfo>
+                <t1endfirst>0910</t1endfirst>
+                <t1endlast>2110</t1endlast>
+                <t1ridelo>1F : 10B</t1ridelo>
+                <t1wdayt>0910, 1500, 1710, 2110</t1wdayt>
+                <t1wt>0910, 1500, 1710, 2110</t1wt>
+                <t2endfirst>0850</t2endfirst>
+                <t2endlast>2050</t2endlast>
+                <t2ridelo>B1F : 3</t2ridelo>
+                <t2wdayt>0850, 1440, 1650, 2050</t2wdayt>
+                <t2wt>0850, 1440, 1650, 2050</t2wt>
+                <toawfirst>0850</toawfirst>
+                <toawlast>2050</toawlast>
+            </item>
+            <item>
+                <adultfare>53500</adultfare>
+                <area>6</area>
+                <busclass>우등</busclass>
+                <busnumber>부산해운대</busnumber>
+                <cpname>경남고속뉴부산관광(051-583-7441), 경북고속(053-356-1387)</cpname>
+                <routeinfo>인천공항2터미널, 인천공항1터미널, 부산동부, 부산해운대</routeinfo>
+                <t1endfirst>0620</t1endfirst>
+                <t1endlast>2350</t1endlast>
+                <t1ridelo>1F : 11A</t1ridelo>
+                <t1wdayt>0620, 0750, 0900, 1030, 1140, 1520, 1700, 1940, 2100, 2350</t1wdayt>
+                <t1wt>0620, 0750, 0900, 1030, 1140, 1520, 1700, 1940, 2100, 2350</t1wt>
+                <t2endfirst>0600</t2endfirst>
+                <t2endlast>2330</t2endlast>
+                <t2ridelo>B1F : 4</t2ridelo>
+                <t2wdayt>0600, 0730, 0840, 1010, 1120, 1500, 1640, 1920, 2040, 2330</t2wdayt>
+                <t2wt>0600, 0730, 0840, 1010, 1120, 1500, 1640, 1920, 2040, 2330</t2wt>
+                <toawfirst>0600</toawfirst>
+                <toawlast>2330</toawlast>
+            </item>
+            <item>
+                <adultfare>50300</adultfare>
+                <area>6</area>
+                <busclass>우등</busclass>
+                <busnumber>포항(동영천경유)</busnumber>
+                <cpname>경북고속(054-553-9090), 천마고속(053-753-7003), 경북고속(053-356-1387), 아성고속(053-753-7003)</cpname>
+                <routeinfo>인천공항2터미널, 인천공항1터미널, 동영천IC정류장, 경주시외, 포항</routeinfo>
+                <t1endfirst>0720</t1endfirst>
+                <t1endlast>2120</t1endlast>
+                <t1ridelo>1F : 11A</t1ridelo>
+                <t1wdayt>0720, 1320, 1530, 2120</t1wdayt>
+                <t1wt>0720, 1320, 1530, 2120</t1wt>
+                <t2endfirst>0700</t2endfirst>
+                <t2endlast>2100</t2endlast>
+                <t2ridelo>B1F : 2</t2ridelo>
+                <t2wdayt>0700, 1300, 1510, 2100</t2wdayt>
+                <t2wt>0700, 1300, 1510, 2100</t2wt>
+                <toawfirst>0700</toawfirst>
+                <toawlast>2100</toawlast>
+            </item>
+            <item>
+                <adultfare>43300</adultfare>
+                <area>6</area>
+                <busclass>우등</busclass>
+                <busnumber>경산</busnumber>
+                <cpname>경원고속(053-355-1241), 경북고속(053-356-1387)</cpname>
+                <routeinfo>인천공항2터미널, 인천공항1터미널, 구미, 경산</routeinfo>
+                <t1endfirst>0730</t1endfirst>
+                <t1endlast>2300</t1endlast>
+                <t1ridelo>1F : 10B</t1ridelo>
+                <t1wdayt>0730, 1030, 1330, 1630, 1930, 2300</t1wdayt>
+                <t1wt>0730, 1030, 1330, 1630, 1930, 2300</t1wt>
+                <t2endfirst>0710</t2endfirst>
+                <t2endlast>2240</t2endlast>
+                <t2ridelo>B1F : 3</t2ridelo>
+                <t2wdayt>0710, 1010, 1310, 1610, 1910, 2240</t2wdayt>
+                <t2wt>0710, 1010, 1310, 1610, 1910, 2240</t2wt>
+                <toawfirst>0710</toawfirst>
+                <toawlast>2240</toawlast>
+            </item>
+            <item>
+                <adultfare>41500</adultfare>
+                <area>6</area>
+                <busclass>우등</busclass>
+                <busnumber>대구북부(김천부곡경유)</busnumber>
+                <cpname>진안고속(053-3547-3314)</cpname>
+                <routeinfo>인천공항2터미널, 인천공항1터미널, 김천부곡(공항), 구미, 대구북부</routeinfo>
+                <t1endfirst>0630</t1endfirst>
+                <t1endlast>1800</t1endlast>
+                <t1ridelo>1F : 10B</t1ridelo>
+                <t1wdayt>0630, 0830, 1150, 1800</t1wdayt>
+                <t1wt>0630, 0830, 1150, 1800</t1wt>
+                <t2endfirst>0610</t2endfirst>
+                <t2endlast>1740</t2endlast>
+                <t2ridelo>B1F : 3</t2ridelo>
+                <t2wdayt>0610, 0810, 1130, 1740</t2wdayt>
+                <t2wt>0610, 0810, 1130, 1740</t2wt>
+                <toawfirst>0610</toawfirst>
+                <toawlast>1740</toawlast>
+            </item>
+        </items>
+        <numOfRows>50</numOfRows>
+        <pageNo>1</pageNo>
+        <totalCount>12</totalCount>
+    </body>
+</response>
