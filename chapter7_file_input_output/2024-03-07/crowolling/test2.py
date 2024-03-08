@@ -19,9 +19,9 @@ from bs4 import BeautifulSoup as bs
 # 기사 모으기
 # 다음 뉴스
 url = 'https://news.daum.net/'
-resp = requests.get(url)
-soup = bs(resp.text, 'html.parser')
-# pprint.pprint(soup)
+response = requests.get(url)
+soup = bs(response.text, 'html.parser')
+# pprint.pprint(soup)   # 제대로 가져왔는지 테스트
 
 dict_list: list[dict] = []
 tags = soup.find_all('div', {'class': 'item_issue'})
@@ -36,6 +36,12 @@ for tag in tags:
     temp_dict['link'] = link
     # print(f'title: {title}, link: {link}')
     # print('-' * 20)
+    response = requests.get(link)
+    soup = bs(response.text, 'html.parser')
+    # print(soup.find('div', {'class': 'article_view'}).text.strip())
+    # print('-' * 20)
+    content = soup.find('div', {'class': 'article_view'}).text.strip()
+    temp_dict['content'] = content
     dict_list.append(temp_dict)
 # print(dict_list)
 from share import save_csv

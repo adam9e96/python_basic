@@ -1,5 +1,5 @@
 # 공공데이터 포털에서 '인천국제공항공사_버스정보' 검색
-#
+# https://www.data.go.kr/data/15095045/openapi.do
 # 인천국제공항 여객터미널 T1, T2 버스 정보(공항행 첫차/막차, 종점행 첫차/막차, 성인요금,
 # 버스등급, 버스번호, 지역, 운수사, 평일시간, 주말시간, 노선정보, 승차위치)를 제공
 import csv
@@ -10,10 +10,12 @@ import pprint
 # 시간표는 이른 시간이 먼저 나오도록
 # 예) '0610, 0630, 0810, 0830, 1130, 1150, 1740, 1800',
 # 파일명 air_bus_daegu.csv
-# 요청변수(Request Parameter)
-# 서비스키	serviceKey
-# 지역	area	1:서울, 2:경기, 3:인천, 4:강원, 5:충청, 6:경상, 7:전라, default=1
-# 응답유형	type
+# 서비스키 : serviceKey
+# 한페이지 결과수 : numOfRows
+# 데이터 표출 페이지 : pageNo
+# 지역: area : 1:서울, 2:경기, 3:인천, 4:강원, 5:충청, 6:경상, 7:전라, default=1
+# 응답유형 : type: [xml, json] default=xml
+
 import requests
 import xmltodict
 
