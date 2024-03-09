@@ -5,7 +5,7 @@ import datetime
 # API 이용하기
 # https://openweathermap.org/
 
-api_key: str = '1f992565eacbc94fe7db0946f3f4898f'
+api_key: str = '키는 개인별로 발급이 필요함'
 
 # 대구 위치 정보 얻기
 # https://openweathermap.org/api/geocoding-api
