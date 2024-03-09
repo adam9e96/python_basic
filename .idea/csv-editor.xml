@@ -283,20 +283,6 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\chapter_7_web_crawling\output\bugs_chart.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\chapter_7_web_crawling\output\melon_chart.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
       </map>
     </option>
   </component>
