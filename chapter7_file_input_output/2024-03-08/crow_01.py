@@ -7,9 +7,9 @@ from bs4 import BeautifulSoup as bs
 # select_one() 은 원하는 태그 하나만 가져오고, 태그가 많은 경우에는 맨 앞의 것만 가져옴
 
 # 1. 대구광역시 위키피디아에서 상징 -> 시조 -> 독수리 들고 오기
-# url: str = 'https://ko.wikipedia.org/wiki/%EB%8C%80%EA%B5%AC%EA%B4%91%EC%97%AD%EC%8B%9C'
-# response = requests.get(url)
-# soup = bs(response.text, 'html.parser')
+url: str = 'https://ko.wikipedia.org/wiki/%EB%8C%80%EA%B5%AC%EA%B4%91%EC%97%AD%EC%8B%9C'
+response = requests.get(url)
+soup = bs(response.text, 'html.parser')
 
 # select 계열의 메서드는 css selector 이용 가능.
 # '.' -> class 속성, '#' -> id 속성
@@ -17,8 +17,8 @@ from bs4 import BeautifulSoup as bs
 # id : 하나의 html에서 한번만 사용. 권장사항
 
 # mw-parser-output 클래스 속성을 가진 태그의 자식 요소 중 ul 태그만 가져옴
-# tag_symbol = soup.select_one('.mw-parser-output ul')
-# print(tag_symbol) # 출력
+tag_symbol = soup.select_one('.mw-parser-output ul')
+print(tag_symbol) # 출력
 
 # 2. 대구광역시 위키피디아에서 공원 들고 오기 # 일단 PASS
 # url: str = 'https://ko.wikipedia.org/wiki/%EB%8C%80%EA%B5%AC%EA%B4%91%EC%97%AD%EC%8B%9C'

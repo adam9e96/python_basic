@@ -10,11 +10,11 @@ soup = bs(response.text, 'html.parser')
 
 # 국가를 가져오기
 nations = soup.select('#exchangeList > li > a.head > h3 > span')
-print(nations)
+# print(nations)
 
 # 환율 가져오기
 exchange_rates = soup.select('#exchangeList > li> a.head > div > span.value')  # 환율 가져옴
-print(exchange_rates)
+# print(exchange_rates.text)
 
 # 미국 USE : 1,326.40
 # 일본 JPY(100엔) : 896.55
@@ -22,5 +22,7 @@ print(exchange_rates)
 
 # for idx, item in enumerate(exchange_rates):
 #     print(f'{item.text} : {exchange_rates[idx].text}')
-for idx, item in enumerate(nations):
-    print(f'{item.text} : {exchange_rates[idx].text}')
+# for idx, item in enumerate(nations):
+#     print(f'{item.text} : {exchange_rates[idx].text}')
+
+
