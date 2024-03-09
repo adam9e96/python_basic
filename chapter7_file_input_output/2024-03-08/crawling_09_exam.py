@@ -1,12 +1,9 @@
-import pprint
 import requests
 from bs4 import BeautifulSoup as bs  # <--은 지금 안씀 html 파싱을 안함
 import os.path
 import csv
 import json
-
 from requests import Response
-
 
 # url = 'https://www.melon.com/chart/'
 # response = requests.get(url)
