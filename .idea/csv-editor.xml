@@ -304,6 +304,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\chapter8_api\output\json07.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
       </map>
     </option>
   </component>

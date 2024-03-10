@@ -1,7 +1,7 @@
 # 공공데이터포탈 data.go.kr
 # 기상청_단기예보 ((구)_동네예보) 조회서비스
 # https://www.data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15084084
-
+# https://www.data.go.kr/iim/api/selectAPIAcountView.do
 # 주소 : http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtNcst
 # 요청 변수
 # 항목명(영문) / 항목명(국문) / 항목크기 / 항목구분 / 샘플데이터 / 항목설명
@@ -23,13 +23,18 @@ import datetime
 
 # 1. 초기값 설정
 # 1) 서비스 키 : requests 사용시 자동으로 인코딩되어서 Decoding 된 키를 사용.
-service_key: str = '9C0QXRXwHgqkBMTIJ0pl2l+yWXerreJmznFT1CnaS04AUbAz7zoq4jDC81qPCbmdpdSlcwNv29CfJKlD13rykw=='
+service_key: str = ''
 
 # 2) 날짜 및 시간 설정
 now: datetime = datetime.datetime.now()  # 현재 날짜 및 시간 변환.
+print(now)  # 2024-03-10 21:42:56.665177
+
 base_date: str = '{:%Y%m%d}'.format(now)  # base_date에 날짜를 입력하기 위해 날짜를 출력 형식으로 지정.
+print(base_date)    # 20240310
+
 base_time: str = '{:02}00'.format(now.hour) if now.minute > 30 else '{:02}00'.format(now.hour - 1)
 # 현재 분이 30분 이전이면 이전 시간(정시)을 설정.
+print(base_time)    # 2100
 
 # 3) 위치 값 (첨부 엑셀 확인)
 # 대구광역기 중구 삼덕동 89 90
@@ -48,14 +53,18 @@ print(url + parameter)
 # 딕셔너리 데이터를 분석해서 원하는 값을 추출.
 response = requests.get(url + parameter)
 json_data = response.text
+print(json_data)
+# print(type(json_data))  # <class 'str'>
+
 dict_data: dict = json.loads(json_data)
-print(dict_data)
+# print(dict_data)
+# print(type(dict_data))  # <class 'dict'>
 
 weather_items = dict_data['response']['body']['items']['item']
-
-print(f'[발표 날짜: {weather_items[0]["baseDate"]}')
-print(f'[발표 시간: {weather_items[0]["baseTime"]}')
-
+#
+print(f'발표 날짜: {weather_items[0]["baseDate"]}')
+print(f'발표 시간: {weather_items[0]["baseTime"]}')
+#
 for k in range(len(weather_items)):
     weather_item = weather_items[k]
     obsr_value = weather_item['obsrValue']
