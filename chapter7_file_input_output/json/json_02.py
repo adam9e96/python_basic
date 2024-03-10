@@ -1,4 +1,5 @@
-# 다음 지시사항에 따라 서울특별시 마포구에 설치된 CCTV의 설치 목적을 종류별로 모두 파악하는 프로그램을 구현하세요.
+# 다음 지시사항에 따라 서울특별시 마포구에 설치된 CCTV의 설치 목적을 종류별로 모두 파악하는
+# 프로그램을 구현하세요.
 #
 # 지시사항
 # 1. cctv.json 파일을 읽습니다.
@@ -33,15 +34,15 @@ import json
 with open('../input/JSON/cctv.json', 'r', encoding='utf-8') as json_file:
     json_data = json_file.read()
     # print(json_data)
-
     print(type(json_data))  # <class 'str'>
 
     # 테스트. loads가 iterator이라서 for문 돌려야됨
     cctv_list = json.loads(json_data)
-    # for item in cctv_list:
-    #     print(item["설치목적구분"])  # <class 'list'>
+    print(type(cctv_list))  # <class 'list'>
 
-    # print(cctv_list)
+    for item in cctv_list:
+        # print(item["설치목적구분"])  # <class 'list'>
+        pass
     # print(cctv_list)
 
     cctv_purpose = set()
@@ -49,4 +50,4 @@ with open('../input/JSON/cctv.json', 'r', encoding='utf-8') as json_file:
         cctv_purpose.add(place['설치목적구분'])
 
 print(cctv_purpose)
-# {'방범(그린파킹)', '주정차단속', '방범(어린이보호구역)', '방범(치수과)', '방범', '방범(공원)', '방범(경찰 설치)'}
+# {'주정차단속', '방범(공원)', '방범(치수과)', '방범(그린파킹)', '방범', '방범(경찰 설치)', '방범(어린이보호구역)'}
