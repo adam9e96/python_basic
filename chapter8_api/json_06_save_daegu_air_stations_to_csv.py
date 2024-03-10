@@ -1,5 +1,6 @@
 # 공공데이터 포탈에서 '한국환경공간 에어코리아 측정소 정보' 검색 후 활용신청. 키사용.
 # https://www.data.go.kr/data/15073877/openapi.do
+
 # 측정소 목록 조회 서비스를 이용
 # 대구에 있는 측정소의 측정소 명, 층정소 주소, 위도, 경도, 설치년도를 csv 파일로 저장
 # 파일명 : daegu_air_list.csv
@@ -12,8 +13,8 @@ import csv
 import requests
 
 # 1) 서비스키
-# service_key: str = '9C0QXRXwHgqkBMTIJ0pl2l+yWXerreJmznFT1CnaS04AUbAz7zoq4jDC81qPCbmdpdSlcwNv29CfJKlD13rykw=='
-service_key: str = '9C0QXRXwHgqkBMTIJ0pl2l%2ByWXerreJmznFT1CnaS04AUbAz7zoq4jDC81qPCbmdpdSlcwNv29CfJKlD13rykw%3D%3D'
+# service_key: str = '9C0QXRXwHgqkBMTIJ0pl2l+yWXerreJmznFT1CnaS04AUbAz7zoq4jDC81qPCbmdpdSlcwNv29CfJKlD13rykw==' # Decoding
+service_key: str = '9C0QXRXwHgqkBMTIJ0pl2l%2ByWXerreJmznFT1CnaS04AUbAz7zoq4jDC81qPCbmdpdSlcwNv29CfJKlD13rykw%3D%3D' # Encoding
 
 addr: str = '대구'
 pageNo: int = 1
@@ -50,7 +51,7 @@ for item in dict_data['response']['body']['items']:
 #     print(data)
 
 # 측정소 명, 층정소 주소, 위도, 경도, 설치년도
-with open('../output/json_06.csv', 'w', newline='', encoding='utf-8') as file:
+with open('./output/json06.csv', 'w', newline='', encoding='utf-8') as file:
     # dict_wirter = csv.DictWriter(file)
     dict_writer = csv.DictWriter(file, fieldnames=['stationName', 'addr', 'dmX', 'dmY', 'year'])
     dict_writer.writeheader()
