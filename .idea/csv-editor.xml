@@ -213,6 +213,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\chapter7_file_input_output\output\daeguperahouse_240310.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\chapter7_file_input_output\output\json_06.csv">
           <value>
             <Attribute>
@@ -305,6 +312,13 @@
           </value>
         </entry>
         <entry key="\chapter8_api\output\json07.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\chapter8_api\output\pus_international_air.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

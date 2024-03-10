@@ -22,7 +22,8 @@ url: str = 'http://apis.data.go.kr/B551177/StatusOfPassengerFlightsDSOdp/getPass
 # 	여객편 주간 운항 현황-출발
 """공항별 여객 항공기 출발 조희일로부터 +6일간 운항정보 현황조회"""
 # 요청변수(Request Parameter)
-serviceKey: str = '9C0QXRXwHgqkBMTIJ0pl2l%2ByWXerreJmznFT1CnaS04AUbAz7zoq4jDC81qPCbmdpdSlcwNv29CfJKlD13rykw%3D%3D'
+serviceKey: str = ''
+
 type: str = 'xml'
 airport_code: str = 'IAD'
 
@@ -45,24 +46,20 @@ dict_data = xmltodict.parse(xml_data)
 
 dict_data_result: list[dict] = []
 for data in dict_data['response']['body']['items']['item']:
-    # pprint.pprint(data)   # 테스트
+    pprint.pprint(data)   # 테스트
     if data.get('airline') and data['airline'] == '대한항공':
         # print(data['airline'])  # 대한항공만 나오는지 테스트
         dict_data_new: dict = dict()
-        # print(data['airline'])
-        # print(data['flightId'])
-        # print(data['estimatedDateTime'])
-        # print(data['airport'])
         dict_data_new['항공사'] = data['airline']
         dict_data_new['편명'] = data['flightId']
-        dict_data_new['예정시간'] = data['estimatedDateTime']
-        dict_data_new['도착지공항'] = data['airport']
+        dict_data_new['예정시간'] = data['scheduleDateTime'] # 예정시간
+        dict_data_new['도착지공항'] = data['airport']  # 도착지공항
         dict_data_result.append(dict_data_new)
 # print(dict_data_result)
 # pprint.pprint(dict_data_result, indent=4)
 
 file_name: str = 'pus_international_air.csv'
-with open(f'../output/{file_name}', 'wt', encoding='utf-8', newline='') as csv_file:
+with open(f'./output/{file_name}', 'wt', encoding='utf-8', newline='') as csv_file:
     csv_writer = csv.DictWriter(csv_file, fieldnames=dict_data_result[0].keys())
     # csv_writer = csv.DictWriter(csv_file, fieldnames=['항공사', '편명', '예정시간', '도착지공항'])  # 이렇게 하면 list[dict] 형태아니여도 됨
     csv_writer.writeheader()

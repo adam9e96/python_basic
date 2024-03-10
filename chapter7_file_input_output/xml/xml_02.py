@@ -23,17 +23,17 @@ response = requests.get(url)
 # 서버로부터 받은 응답 내용을 텍스트로 저장
 xml_data = response.text
 # print(type(xml_data))   # <class 'str'>
-
+# print(xml_data)
 dict_data = xmltodict.parse(xml_data)
 # print(dict_data)
 
 # print(type(dict_data))  #  <class 'dict'>
-s
+
 # pprint.pprint(dict_data)    #출력용도임
 
 # print(dict_data['rss']['channel']['title'])
 # print(dict_data['rss']['channel']['link'])
-
+# print(dict_data['rss']['channel']['item'][0])
 # 공연 정보 순회
 dict_list: list[dict] = list()
 for element in dict_data['rss']['channel']['item']:
@@ -55,14 +55,13 @@ print(dict_list)
 from datetime import datetime
 
 today_str = datetime.now().strftime("%y%m%d")  # 년월일 형식
-print(today_str)  # 테스트
+# print(today_str)  # 테스트
 filename = f'daeguperahouse_{today_str}.csv'
 
 with open(f'../output/{filename}', 'wt', newline='', encoding='utf-8') as csvfile:
     csv_writer = csv.DictWriter(csvfile, fieldnames=dict_list[0].keys())
     # print(type(dict_list[0]))  # <class 'dict'>
     # print(type(csv_writer)) # <class 'csv.DictWriter'>
-
 # https://docs.python.org/3.10/library/csv.html#csv.DictWriter.writeheader
     csv_writer.writeheader()
     # writer = csv.writer(csvfile)

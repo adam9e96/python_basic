@@ -83,7 +83,7 @@ for item in dict_data['response']['body']['items']['item']:
 print(dict_datas)
 
 file_name: str = 'air_bus_daegu.csv'
-with open(f'../output/{file_name}', 'wt', newline='', encoding='utf-8') as csv_file:
+with open(f'../chapter7_file_input_output/output/{file_name}', 'wt', newline='', encoding='utf-8') as csv_file:
     csv_writer = csv.DictWriter(csv_file, dict_datas[0].keys())
     csv_writer.writeheader()
     for item in dict_datas:
