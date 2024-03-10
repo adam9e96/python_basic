@@ -325,6 +325,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\chapter8_api\output\xml_04.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
       </map>
     </option>
   </component>

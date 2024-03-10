@@ -1,5 +1,4 @@
 import pprint
-
 import requests
 from bs4 import BeautifulSoup as bs
 
@@ -15,12 +14,8 @@ for section in section_list:
     # print(section.find('p', {'class': 'rl_txt'}))
     # pprint.pprint(section.find_all('p', {'class': 'rl_txt'}))
     news_list = section.find_all('p', {'class': 'rl_txt'})
+    # print(news_list)
     for i in news_list:
         print(i.text.strip())
     print()
-# news_list = section_list.find_all('p', {'class': 'rl_txt'})
-# print(news_list)
 # pprint.pprint(news_list)
-
-# for news in news_list:
-#     print(news.text)

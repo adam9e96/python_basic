@@ -19,9 +19,8 @@ import pprint
 import requests
 import xmltodict
 
-service_key_decode: str = '9C0QXRXwHgqkBMTIJ0pl2l+yWXerreJmznFT1CnaS04AUbAz7zoq4jDC81qPCbmdpdSlcwNv29CfJKlD13rykw=='
-service_key_encode: str = '9C0QXRXwHgqkBMTIJ0pl2l%2ByWXerreJmznFT1CnaS04AUbAz7zoq4jDC81qPCbmdpdSlcwNv29CfJKlD13rykw%3D%3D'
-area: int = 6
+service_key_encode: str = ''
+area: int = 6  # 경상
 type: str = 'xml'
 url: str = 'http://apis.data.go.kr/B551177/BusInformation/getBusInfo'
 num_of_rows: int = 50
@@ -29,7 +28,7 @@ parameter: str = f'?serviceKey={service_key_encode}&area={area}&numOfRows={num_o
 
 # print(url+parameter)
 response = requests.get(url + parameter)
-print(response.url)  # 테스트
+# print(response.url)  # 테스트
 
 xml_data = response.text
 # print(type(xml_data))   # <class 'str'>
@@ -66,7 +65,6 @@ for item in dict_data['response']['body']['items']['item']:
         dict_temporary['성인요금'] = item['adultfare']  # adultfare
         # 기본 데이터는 문자열. 2개의 문자열을 결합하고, 공백제거 후, 리스트로 변환
         dict_temporary['평일시간표'] = sort_str(item['t1wdayt'], item['t2wdayt'])
-
         dict_temporary['주말시간표'] = sort_str(item['t1wt'], item['t2wt'])
 
         # temp_list: list[str] = (item['t1wdayt'] + ', ' + item['t2wdayt']).replace(' ', '').split(',')
@@ -78,12 +76,11 @@ for item in dict_data['response']['body']['items']['item']:
         # temp_list = list(set(temp_list))  # 중복제거
         # temp_list.sort()  # 정렬
         # dict_temporary['주말시간표'] = str(temp_list)[1:-1].replace("'", '').replace('[', '').replace(']', '')
-
         dict_datas.append(dict_temporary)
 print(dict_datas)
 
 file_name: str = 'air_bus_daegu.csv'
-with open(f'../chapter7_file_input_output/output/{file_name}', 'wt', newline='', encoding='utf-8') as csv_file:
+with open(f'./output/{file_name}', 'wt', newline='', encoding='utf-8') as csv_file:
     csv_writer = csv.DictWriter(csv_file, dict_datas[0].keys())
     csv_writer.writeheader()
     for item in dict_datas:
@@ -101,5 +98,5 @@ from share import save_csv
 #             csv_writer.writerow(item)
 #     print(f'{file_path}이 저장되었습니다.')
 
-save_csv('abcdefg.csv', dict_datas)
+save_csv('xml_04.csv', dict_datas)
 # 이게 함수를 사용하는 이유.

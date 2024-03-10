@@ -5,7 +5,7 @@ import pprint
 import requests
 from bs4 import BeautifulSoup as bs
 
-# BeautifulSoup 실습 : find() 메소드 이용하기
+# BeautifulSoup 실습 : find() 메소드 이용 하기
 
 # 1) find() 메소드
 # 지정된 태그들 중에서 가장 첫 번째 태그만 가져오는 메소드(하나의 값만 반환). 문자열 형태로 반환.
@@ -15,13 +15,12 @@ from bs4 import BeautifulSoup as bs
 url = 'https://ko.wikipedia.org/wiki/%EB%8C%80%EA%B5%AC%EA%B4%91%EC%97%AD%EC%8B%9C'
 resp = requests.get(url)
 soup = bs(resp.text, 'html.parser')
-# print(soup.prettify().strip())
+# print(soup.prettify().strip()) # 파싱 제대로 되었는지 확인
 
 first_img = soup.find(name='img')  # img 태그 중에 제일 먼저 나오는 것
 # print(type(first_img))  # <class 'bs4.element.Tag'>
 
-print(
-    first_img)  # <img alt="" aria-hidden="true" class="mw-logo-icon" height="50" src="/static/images/icons/wikipedia.png" width="50"/>
+# print(first_img)  # <img alt="" aria-hidden="true" class="mw-logo-icon" height="50" src="/static/images/icons/wikipedia.png" width="50"/>
 
 target_img = soup.find(name='img', attrs={'alt': 'Daedongyeojido (Gyujanggak) 17-02.jpg'})
 # print(type(target_img)) # <class 'bs4.element.Tag'>
@@ -56,7 +55,7 @@ today_list_title = today_list.find_all('strong', {'class', 'title'})
 # pretty print
 
 # for title in today_list_title:
-#     print(title)
+#     print(title.text.strip())
 
 # for title in today_list_title:
 # print(title.text.strip())  # 양쪽 공백 제거
@@ -79,10 +78,9 @@ soup = bs(resp.text, 'html.parser')
 # print()
 
 # a 태그 20개만 출력
-# print('2. a 태그 20개만 출력')
+print('2. a 태그 20개만 출력')
 # for news in soup.find_all('a')[:20]:
 #     print(news.text.strip())
-# print(news) 태그 포함
 
 # a 태그 5개 출력
 # print('3. a 태그 링크 5개 출력')
@@ -98,7 +96,7 @@ soup = bs(resp.text, 'html.parser')
 
 # 링크를 텍스트 파일로 저장
 print('5. 링크를 텍스트 파일로 저장')
-file = open('../output/links.txt', 'w')  # 쓰기 전용 파일 생성.
+file = open('./output/crawling_02_links.txt', 'w')  # 쓰기 전용 파일 생성.
 
 for i in soup.find_all('div', {'class': 'item_issue'}):
     # print(i.find('a'))
@@ -106,16 +104,16 @@ for i in soup.find_all('div', {'class': 'item_issue'}):
     # print(i.find('a').get('href'))
     file.write(i.find('a').get('href') + '\n')
 file.close()
-
+print('저장성공')
 # 문제 : with 사용. 뉴스 타이틀 추출. 파일명은 news_title.txt
 # 넘버링 붙도록 예) 1. 日증시, 차익매물에 사흘만에 40,000 아래로...장중엔 한떄 최고(종합)
 
-file_name: str = 'news_title.txt'
-with open(f'../output/{file_name}', 'w', encoding='utf-8') as file:
+file_name: str = 'crawling_02_news_title.txt'
+with open(f'./output/{file_name}', 'w', encoding='utf-8') as file:
     for i,news in enumerate(soup.find_all('div', {'class': 'item_issue'})):
         # print(i.find('a').get(''))
         # print(i.find('a').get('strong'))
-
+        print(news.find_all("a")[1].text.strip())
         # print(news.find_all('a')[1].text.strip())
         file.write(f'{i+1}.{news.find_all("a")[1].text.strip()}\n')
         # print('*' * 20)
