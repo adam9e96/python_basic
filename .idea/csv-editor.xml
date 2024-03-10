@@ -87,13 +87,6 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\chapter7_file_input_output\input\cctv.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
         <entry key="\chapter7_file_input_output\input\아파트(매매)_실거래가_20240304160735.csv">
           <value>
             <Attribute>
@@ -326,6 +319,27 @@
           </value>
         </entry>
         <entry key="\chapter8_api\output\xml_04.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\chapter_9_web_crawling\output\abcdef.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\chapter_9_web_crawling\output\bugs_chart.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\chapter_9_web_crawling\output\melon_chart.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

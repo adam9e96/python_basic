@@ -43,7 +43,7 @@ soup = bs(response.text, 'html.parser')
 # print(soup.prettify()) #
 
 # pprint.pprint(soup.select('table tbody tr')[0])
-t1 = soup.select('table tbody tr')[0]
+# t1 = soup.select('table tbody tr')[0]
 # print(t1)
 
 # 제목
@@ -80,7 +80,7 @@ for idx, item in enumerate(datas, 1):
         image_file.write(response.content)
 
 # print(dict_list)
-t2 = soup.select('table tbody')
+# t2 = soup.select('table tbody')
 file_name = 'melon_chart.csv'
 with open(f'./output/{file_name}', 'wt', newline='', encoding='utf-8') as csvfile:
     writer = csv.DictWriter(csvfile, dict_list[0].keys())
