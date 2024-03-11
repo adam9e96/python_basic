@@ -339,13 +339,6 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\chapter_9_web_crawling\output\123.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
         <entry key="\chapter_9_web_crawling\output\abcdef.csv">
           <value>
             <Attribute>
