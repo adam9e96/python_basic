@@ -16,7 +16,7 @@ import csv
 
 data_list_new = []  # 새로운 연락처 저장
 # 1. 기존 파일을 읽음
-with open('./input/연락처.txt', 'r', encoding='utf-8') as file1:  # w로 쓰기모드로 읽어버리면
+with open('../input/연락처.txt', 'r', encoding='utf-8') as file1:  # w로 쓰기모드로 읽어버리면
     # UnsupportedOperation 예외가 발생함.
     #  연락처.txt 파일을 읽기 모드로 열고, 파일의 모든 라인을 data_list 리스트에 저장 한다.
     #  파일의 내용은 변경되지 않습니다.file_reader = csv.reader(file,delimiter=',')
@@ -40,6 +40,6 @@ print(data_list_new)
 # 2. 변경된 내용을 저장
 # 원본 손상을 막기 위해 복사본 생성.
 # 파이참에서 확인하기 쉽게 utf-8로 인코딩 설정
-with open('./output/연락처_복사본.txt','wt',encoding='utf-8') as file:
+with open('../output/연락처_복사본.txt', 'wt', encoding='utf-8') as file:
     for row in data_list_new:
         file.write(row)

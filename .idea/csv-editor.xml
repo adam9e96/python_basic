@@ -3,13 +3,6 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
-        <entry key="\chapter7_file_input_output\2024-03-07\crowolling\output\abcdef.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
         <entry key="\chapter7_file_input_output\input\CSV\apt_202011.csv">
           <value>
             <Attribute>
@@ -319,6 +312,34 @@
           </value>
         </entry>
         <entry key="\chapter8_api\output\xml_04.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\chapter_9_web_crawling\exam\bukgu_trail.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\chapter_9_web_crawling\exam\cgv_chart.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\chapter_9_web_crawling\exam\daegufood_street.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\chapter_9_web_crawling\output\123.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
