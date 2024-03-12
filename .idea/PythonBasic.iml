@@ -2,9 +2,11 @@
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/chapter10_data_analysis/input/소상공인시장진흥공단_상가(상권)정보_20231231 (2)" />
       <excludeFolder url="file://$MODULE_DIR$/chapter8_api/api_docs/기상청41_단기예보 조회서비스_오픈API활용가이드_최종" />
+      <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="PythonBasic" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

@@ -17,6 +17,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\chapter10_data_analysis\input\daegufood_street.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\chapter10_data_analysis\input\sea_rain1.csv">
           <value>
             <Attribute>
@@ -45,14 +52,28 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\chapter10_data_analysis\output\save_DataFrame.csv">
+        <entry key="\chapter10_data_analysis\output\daegufood_street_summary.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\chapter10_data_analysis\pandas\DDDD.csv">
+        <entry key="\chapter10_data_analysis\output\gk_store_02.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\chapter10_data_analysis\output\gk_store_03.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\chapter10_data_analysis\output\save_DataFrame.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
