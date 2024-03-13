@@ -24,6 +24,34 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\chapter10_data_analysis\input\pandas_02\covid.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\chapter10_data_analysis\input\pandas_02\professor.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\chapter10_data_analysis\input\pandas_02\signup.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\chapter10_data_analysis\input\pandas_02\vaccine.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\chapter10_data_analysis\input\sea_rain1.csv">
           <value>
             <Attribute>
@@ -74,6 +102,13 @@
           </value>
         </entry>
         <entry key="\chapter10_data_analysis\output\save_DataFrame.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\chapter7_file_input_output\input\CSV\apt_201910.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

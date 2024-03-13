@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/chapter10_data_analysis/input/pandas_02/covid.csv" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/chapter10_data_analysis/input/pandas_02/professor.csv" charset="x-windows-949" />
     <file url="file://$PROJECT_DIR$/chapter10_data_analysis/input/sea_rain1_from_notepad.csv" charset="x-windows-949" />
     <file url="file://$PROJECT_DIR$/chapter7_file_input_output/input/CSV/cctv.csv" charset="x-windows-949" />
     <file url="file://$PROJECT_DIR$/chapter7_file_input_output/input/CSV/회원명단.csv" charset="x-windows-949" />
