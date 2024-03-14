@@ -73,6 +73,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\chapter10_data_analysis\matplot_02\input\mpg.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\chapter10_data_analysis\output\aa.csv">
           <value>
             <Attribute>
