@@ -52,14 +52,7 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\chapter10_data_analysis\input\sea_rain1.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\chapter10_data_analysis\input\sea_rain1_from_notepad.csv">
+        <entry key="\chapter10_data_analysis\input\pandas_02_원본\vaccine.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -67,6 +60,13 @@
           </value>
         </entry>
         <entry key="\chapter10_data_analysis\input\weather.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\chapter10_data_analysis\matplot_02\input\TCS_B3_04_03_238959.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
