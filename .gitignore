@@ -7,3 +7,8 @@
 /chapter10_data_analysis/pandas03/input
 /chapter10_data_analysis/matplot_02/input
 /chapter10_data_analysis/pandas03/output
+venv/
+# .gitignore 파일
+
+*.idea
+/.idea
