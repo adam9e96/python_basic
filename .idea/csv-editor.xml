@@ -10,20 +10,6 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\chapter10_data_analysis\input\bank.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\chapter10_data_analysis\input\daegufood_street.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
         <entry key="\chapter10_data_analysis\input\pandas_02\covid.csv">
           <value>
             <Attribute>
@@ -53,13 +39,6 @@
           </value>
         </entry>
         <entry key="\chapter10_data_analysis\input\pandas_02_원본\vaccine.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\chapter10_data_analysis\input\weather.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

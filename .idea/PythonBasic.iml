@@ -5,8 +5,14 @@
       <excludeFolder url="file://$MODULE_DIR$/chapter10_data_analysis/input/소상공인시장진흥공단_상가(상권)정보_20231231 (2)" />
       <excludeFolder url="file://$MODULE_DIR$/chapter8_api/api_docs/기상청41_단기예보 조회서비스_오픈API활용가이드_최종" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/chapter10_data_analysis/Matplot_01/input" />
+      <excludeFolder url="file://$MODULE_DIR$/chapter10_data_analysis/input/pandas_010" />
+      <excludeFolder url="file://$MODULE_DIR$/chapter10_data_analysis/input/pandas_02" />
+      <excludeFolder url="file://$MODULE_DIR$/chapter10_data_analysis/input/pandas_02_원본" />
+      <excludeFolder url="file://$MODULE_DIR$/chapter10_data_analysis/pandas/input" />
+      <excludeFolder url="file://$MODULE_DIR$/chapter10_data_analysis/pandas03/data" />
     </content>
-    <orderEntry type="jdk" jdkName="PythonBasic" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python_Basic" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
