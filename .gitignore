@@ -1,13 +1,13 @@
 # my api/ csv/ xlsx files
 /chapter8_api/api_key.py
 /chapter8_api/api_docs
-/chapter10_data_analysis/input
-/chapter10_data_analysis/Matplot_01/input
-/chapter10_data_analysis/pandas/input
-/chapter10_data_analysis/pandas03/data
-/chapter10_data_analysis/pandas03/input
-/chapter10_data_analysis/matplot_02/input
-/chapter10_data_analysis/pandas03/output
+/chapter010_data_analysis/input
+/chapter010_data_analysis/Matplot_01/input
+/chapter010_data_analysis/pandas/input
+/chapter010_data_analysis/pandas03/data
+/chapter010_data_analysis/pandas03/input
+/chapter010_data_analysis/matplot_02/input
+/chapter010_data_analysis/pandas03/output
 
 # Created by https://www.toptal.com/developers/gitignore/api/windows,pycharm,python
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,pycharm,python
@@ -324,3 +324,11 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,pycharm,python
+/.vscode/
+/.idea
+/chapter10_data_analysis/pandas03/input
+/chapter10_data_analysis/pandas03/input
+/chapter10_data_analysis/pandas_999/input
+/chapter10_data_analysis/matplot_02/input
+/chapter10_data_analysis/input
+/chapter010_data_analysis/pandas_999/input
