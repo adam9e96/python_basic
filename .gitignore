@@ -6,7 +6,7 @@
 /chapter010_data_analysis/pandas/input
 /chapter010_data_analysis/pandas03/data
 /chapter010_data_analysis/pandas03/input
-/chapter010_data_analysis/matplot_02/input
+/chapter010_data_analysis/seaborn/input
 /chapter010_data_analysis/pandas03/output
 
 # Created by https://www.toptal.com/developers/gitignore/api/windows,pycharm,python
@@ -327,8 +327,22 @@ $RECYCLE.BIN/
 /.vscode/
 /.idea
 /chapter10_data_analysis/pandas03/input
-/chapter10_data_analysis/pandas03/input
 /chapter10_data_analysis/pandas_999/input
 /chapter10_data_analysis/matplot_02/input
 /chapter10_data_analysis/input
 /chapter010_data_analysis/pandas_999/input
+!/chapter010_data_analysis/input/
+!/chapter010_data_analysis/seaborn/input/
+!/chapter010_data_analysis/seaborn/output/
+!/chapter010_data_analysis/pandas03/data/
+
+!/chapter010_data_analysis/pandas03/input/
+
+!/chapter010_data_analysis/pandas03/output/
+!/chapter010_data_analysis/Matplot_01/input/
+*.CSV
+*.xlsx
+/chapter010_data_analysis/input
+*.csv
+*.csv
+*.sav
