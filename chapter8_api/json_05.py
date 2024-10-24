@@ -23,7 +23,7 @@ import datetime
 
 # 1. 초기값 설정
 # 1) 서비스 키 : requests 사용시 자동으로 인코딩되어서 Decoding 된 키를 사용.
-service_key: str = ''
+service_key: str = '9C0QXRXwHgqkBMTIJ0pl2l%2ByWXerreJmznFT1CnaS04AUbAz7zoq4jDC81qPCbmdpdSlcwNv29CfJKlD13rykw%3D%3D'
 
 # 2) 날짜 및 시간 설정
 now: datetime = datetime.datetime.now()  # 현재 날짜 및 시간 변환.
