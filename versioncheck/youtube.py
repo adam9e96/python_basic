@@ -43,7 +43,7 @@ def get_youtube_data(api_key, channel_ids):
 
 if __name__ == "__main__":
     # API 키를 자신의 것으로 교체하세요.
-    API_KEY = "AIzaSyBYo6KRiC04EGDqW2XLdlWsyxgsjF-AJew"
+    API_KEY = ""
 
     # 데이터를 가져올 채널 ID 목록
     CHANNEL_IDS = [

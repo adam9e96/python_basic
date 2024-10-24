@@ -39,7 +39,7 @@ def get_youtube_data(api_key, channel_ids):
 
 
 if __name__ == "__main__":
-    API_KEY = "AIzaSyBYo6KRiC04EGDqW2XLdlWsyxgsjF-AJew"
+    API_KEY = ""
     CHANNEL_IDS = [
         "UCAHVQ44O81aehLWfy9O6Elw",
         "UC7-m6jQLinZQWIbwm9W-1iw",
